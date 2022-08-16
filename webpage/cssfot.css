@@ -1,0 +1,395 @@
+* {
+
+  padding: 0;
+
+  margin: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  background-image:url(https://i.imgur.com/9zPqpPD.jpeg);
+
+  background-size:1920px;
+
+  font-family: "Poppins", sans-serif;
+
+}
+
+header a {
+
+  text-decoration: none;
+
+  margin:10px;
+
+}
+
+
+
+header {
+
+  padding:  20px;
+
+  background-color: rgba(0, 0, 0, 0.705);
+
+  height: 65px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size:20px;
+
+}
+
+ul {
+
+  list-style: none;
+
+  height: 100%;
+
+  display: flex;
+
+  align-items: right;
+
+  justify-content: space-around;
+
+}
+
+
+
+ul a {
+
+  color: white;
+
+}
+
+
+
+ul li {
+
+  padding: 5px;
+
+  margin-left: 10px;
+
+  margin-right:10px;
+
+}
+
+
+
+ul li:hover {
+
+  transform: scale(1.1);
+
+  transition: 0.3s;
+
+  background-color:rgba(151, 151, 151, 0.315);
+
+  padding-bottom:28px;
+
+}
+
+#hamburger-icon {
+
+  margin: auto 0;
+
+  display: none;
+
+  cursor: pointer;
+
+}
+
+
+
+#hamburger-icon div {
+
+  width: 35px;
+
+  height: 3px;
+
+  background-color: white;
+
+  margin: 6px 0;
+
+  transition: 0.4s;
+
+}
+
+
+
+.open .bar1 {
+
+  opacity: 0;
+
+}
+
+
+
+.open .bar2 {
+
+  opacity: 0;
+
+}
+
+
+
+.open .bar3 {
+
+  opacity: 0;}
+
+
+
+.open .mobile-menu {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: right;
+
+  justify-content: flex-start;
+
+  background-color:rgba(27, 27, 27, 0.918);
+
+}
+
+
+
+.mobile-menu {
+
+  display: none;
+
+  position: absolute;
+
+  top: 50px;
+
+  left: 0;
+
+  height: calc(100vh - 50px);
+
+  width: 100%;
+
+}
+
+
+
+.mobile-menu li {
+
+  margin-bottom: 10px;
+
+}
+
+
+
+@media only screen and (max-width: 750px) {
+
+  header nav {
+
+    display: none;
+
+  }
+
+  #hamburger-icon {
+
+    display: block;
+
+  }
+
+  footer .naslov{
+
+    font-size:70px;
+
+  }
+
+}
+
+.dropbtn {
+
+  background-color: rgba(0, 0, 0, 0);
+
+  color: white;
+
+  padding-bottom: 3px;
+
+  padding-left:15px;
+
+  padding-right:30px;
+
+  font-size: 18px;
+
+  border: none;
+
+  font-weight: bold;
+
+  display: flex;
+
+  align-items: center;
+
+}
+.dropbtn2 {
+
+  background-color: rgba(0, 0, 0, 0);
+
+  color: white;
+
+  padding-bottom: 10px;
+
+  padding-left:10px;
+
+  padding-right:10px;
+
+  font-size: 20px;
+
+  border: none;
+
+  font-weight: bold;
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+
+.dropdown {
+
+  position: relative;
+
+  display: inline-block;
+
+}
+
+
+
+.dropdown-content {
+
+  display: none;
+
+  position: absolute;
+
+  background-color: #f1f1f1;
+
+  min-width: 160px;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  z-index: 1;
+
+}
+
+
+
+.dropdown-content a {
+
+  color: black;
+
+  padding: 12px 16px;
+
+  font-size: 20px;
+
+  text-decoration: none;
+
+  display: block;
+
+}
+
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+.dropdown:hover .dropbtn {background-color: rgba(151, 151, 151, 0.315);}
+
+.footer {
+
+  position: fixed;
+
+  left: 0;
+
+  bottom: 0;
+
+  width: 100%;
+
+  background-color:  rgba(0, 0, 0, 0.705);
+
+  color: white;
+
+  text-align: center;
+
+  padding:15px;
+
+}
+
+#slika {
+
+  text-align:center ;
+
+  font-weight:400;
+
+  font-size:80px;
+
+  padding-top:200px;
+
+  color:rgba(255, 255, 255, 0.829);
+
+}
+
+.slika2{
+
+  text-align:left ;
+
+  font-weight:500;
+
+  font-size:100px;
+
+  padding-top:80px;
+
+  padding-left:75px;
+
+  color:rgba(255, 255, 255, 0.829);
+
+}
+
+.bela {
+
+  background-color: white;
+
+  padding-top:15px;
+
+  padding-left:12px;
+
+}
+
+.tekst a{
+
+  background: black;
+
+  padding: 10px 18px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  color: white;
+
+  display: inline-block;
+
+  border-radius: 5px;
+
+}
+
+.emphasis {
+
+  font-style: italic;
+
+}
